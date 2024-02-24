@@ -15,3 +15,13 @@
     - we have config file in the project which maven reads
     - check maven local repo if the dependencies are present if not there will pull it from mavem central repo (remote)
     - maven will also download supporting dependicies
+
+# pom.xl
+    - Project Object Model file(pom file)
+    - configuration file of project
+    - maven uses this to get the dependicies in project
+    - located in root
+## POM file structure
+    1. Project Meta Date --> project name, version etc. Output File type: JAR, WAR
+    2. Dependicies --> list of dependicies
+    3. Plug ins --> Additional custom tasks to run: generate JUnit test reports etc
