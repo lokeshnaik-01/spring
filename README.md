@@ -34,3 +34,15 @@
   - minimize amount of manual config
   - help to resolve dependency conflicts
   - provide an embedded http server
+  - spring boot apps can run stand alone 
+
+## Create a spring project
+  - spring initializer can be used to create a spring project
+  - [https://start.spring.io/](https://start.spring.io/) we can select the spring version, language, language and dependencies
+  - `Artifact` in metadata is the name of the project 
+  - in dependencies, you can add all the dependencies required
+
+# Adding Rest Controller
+  - We added a new package rest and in that we are writing the controller
+  - `@RestController` will define the rest controller
+  - `@GetMapping` will listen to the get request and call the function below

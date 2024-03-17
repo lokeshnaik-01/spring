@@ -10,6 +10,6 @@ public class FunRestController {
     // exposr "/" that returns "Hello World"
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World";
+        return "Hello World!";
     }
 }
