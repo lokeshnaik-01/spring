@@ -7,9 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 // when ever a get request is called sayHello method will be executed
 @RestController
 public class FunRestController {
-    // exposr "/" that returns "Hello World"
+    // expose "/" that returns "Hello World"
     @GetMapping("/")
     public String sayHello() {
         return "Hello World!";
     }
+
+    // expose a new endpoint
+    @GetMapping("/name")
+    public String greetByName() {
+        return "Hi Lokesh Naik";
+    }
+
 }

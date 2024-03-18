@@ -74,3 +74,8 @@
   - A collection of dependencies grouped together
   - reduces amount of maven configuration 
   - ![Starters](src/main/resources/1.jpg)
+
+# Spring Boot dev tools
+  - `spring-boot-devtools` automatically restart application when code is updated
+  - add dependency it to POM
+  - if intellij is used select build project automatically in build/compile and in advanced settings select the auto make
