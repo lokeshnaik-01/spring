@@ -79,3 +79,26 @@
   - `spring-boot-devtools` automatically restart application when code is updated
   - add dependency it to POM
   - if intellij is used select build project automatically in build/compile and in advanced settings select the auto make
+
+# Spring Boot Actuator
+  - Exposes endpoints to monitor and manage your application
+  - Add dependency to POM file
+  - `spring-boot-starter-actuator` add in POM
+  - REST endpoints are automatically added to application
+  - no need to write additional code
+  - Endpoints are prefixed with: `/actuator`
+  - these are provided for free
+## Health Endpoint
+  - `/health` checks the status of app.
+  - can be used by monitoring apps to see if app is up or down
+  - health status is customizable
+## Info endpoint
+  - `info` is not exposed only `health` is exposed
+  - to expose `info` change it in `application.properties`
+  - Properties starting with `info` will be used by `/info`
+  - `management.endpoints.web.exposure.include=health,info` add this in `application/endpoints`
+  - `management.info.env.enabled=true`
+## Additional endpoints
+  - `/auditevents` audit events for your app
+  - `/beans` list of all beans registered in spring app context
+  - `/mapping` list of all `@RequestMapping` paths
