@@ -53,4 +53,5 @@
   - `src/main/webapp` --> jsp file and other web assets(css, js) etc
   - `src/test` --> unit test
   - `target` --> destination directory for compiled code will be created by maven automatically
-  - 
+  - `mvnw` allows you to run a maven project. It is a maven wrapper file. it'll automatically download maven and run
+  - `mvnw clean compile test` in windows
