@@ -68,3 +68,9 @@
   - it is empty at beginning
   - we can change port number for example
   - we can also add custom properties
+
+# Spring Boot Starters
+  - A curated list of Maven Dependencies
+  - A collection of dependencies grouped together
+  - reduces amount of maven configuration 
+  - ![Starters](src/main/resources/1.jpg)
