@@ -101,4 +101,5 @@
 ## Additional endpoints
   - `/auditevents` audit events for your app
   - `/beans` list of all beans registered in spring app context
-  - `/mapping` list of all `@RequestMapping` paths
+  - `/mappings` list of all `@RequestMapping` paths
+  - `/threaddump` will give info of all thread running in app
