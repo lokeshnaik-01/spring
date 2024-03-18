@@ -103,3 +103,11 @@
   - `/beans` list of all beans registered in spring app context
   - `/mappings` list of all `@RequestMapping` paths
   - `/threaddump` will give info of all thread running in app
+
+# Spring Security
+  - We do not want to expose all the information
+  - Add spring security and endpoints are secured
+  - sign in prompt is generated for login to access the endpoints password is generated in console and username is `user`
+  - `spring.security.user.name=lokesh`
+  - `spring.security.user.password=naik` we can add these in the POM to overwrite 
+  - `management.endpoints.web.exposure.exclude=health` to exclude endpoints when we try to acc this we get 404 whitelabel error page
