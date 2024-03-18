@@ -46,3 +46,11 @@
   - We added a new package rest and in that we are writing the controller
   - `@RestController` will define the rest controller
   - `@GetMapping` will listen to the get request and call the function below
+
+# File Structure
+  - `src/main/java` --> java source code
+  - `src/main/resources` --> properties/config files used by app
+  - `src/main/webapp` --> jsp file and other web assets(css, js) etc
+  - `src/test` --> unit test
+  - `target` --> destination directory for compiled code will be created by maven automatically
+  - 
