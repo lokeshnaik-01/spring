@@ -111,3 +111,8 @@
   - `spring.security.user.name=lokesh`
   - `spring.security.user.password=naik` we can add these in the POM to overwrite 
   - `management.endpoints.web.exposure.exclude=health` to exclude endpoints when we try to acc this we get 404 whitelabel error page
+
+# Spring Application running commands
+  1. `mvn package` jar file is created
+  2. `java -jar <jar_file_path` no need to run tomcat as, unlike maven spring boot already has tom cat running
+  3. `mvn spring-boot:run` can also be used
