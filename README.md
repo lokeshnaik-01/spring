@@ -60,3 +60,11 @@
   - spring-boot plugin is used to run the maven project
     - `./mvnw package`
     - `./mvnw spring-boot:run` or `mvn spring-boot:run`
+
+# Application properties
+  - all propoerties for spring are pick up from this file
+  - file path is `src/main/resources/application.properties`
+  - it will be created by spring initializer
+  - it is empty at beginning
+  - we can change port number for example
+  - we can also add custom properties
