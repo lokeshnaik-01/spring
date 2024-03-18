@@ -55,3 +55,8 @@
   - `target` --> destination directory for compiled code will be created by maven automatically
   - `mvnw` allows you to run a maven project. It is a maven wrapper file. it'll automatically download maven and run
   - `mvnw clean compile test` in windows
+
+# Plugin
+  - spring-boot plugin is used to run the maven project
+    - `./mvnw package`
+    - `./mvnw spring-boot:run` or `mvn spring-boot:run`
