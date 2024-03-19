@@ -149,3 +149,10 @@
 # @Autowired
   - `@Autowired` annotation tells spring to inject a dependency
   - If you have one constructor then `@Autowired` on constructor is optional
+
+# Component Scanning
+  - Spring will scan java classes for special annotations and register the beans in the spring container automatically
+  - ![@SpringBootApplication](src/main/resources/2.jpg)
+  - Spring boot will only scan for main class and the package in which the main class is present
+  - Scanning only works for `com.lokeshSpring.lokeshSpringCourse` but doesn't work for `com.lokeshSpring.util` or anyother
+  - To scan all these we need to explicitly list the base packages to scan check in springApplication main file
