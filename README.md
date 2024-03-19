@@ -116,3 +116,7 @@
   1. `mvn package` jar file is created
   2. `java -jar <jar_file_path` no need to run tomcat as, unlike maven spring boot already has tom cat running
   3. `mvn spring-boot:run` can also be used
+
+# @Value annotation
+  - `@Value` is sued to inject values into the spring boot app defined in `application.properties`
+  - `import org.springframework.beans.factory.annotation.Value;` add this to the value where we want to import the value
