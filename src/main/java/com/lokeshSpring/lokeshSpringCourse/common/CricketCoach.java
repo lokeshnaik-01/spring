@@ -1,9 +1,9 @@
-package com.lokeshSpring.lokeshSpringCourse;
+package com.lokeshSpring.lokeshSpringCourse.common;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class CricketCoach implements Coach{
+public class CricketCoach implements Coach {
 
     @Override
     public String getDailyWorkOut() {

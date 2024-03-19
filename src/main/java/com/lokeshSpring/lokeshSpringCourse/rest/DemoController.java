@@ -1,6 +1,7 @@
-package com.lokeshSpring.lokeshSpringCourse;
+package com.lokeshSpring.lokeshSpringCourse.rest;
 
 
+import com.lokeshSpring.lokeshSpringCourse.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
