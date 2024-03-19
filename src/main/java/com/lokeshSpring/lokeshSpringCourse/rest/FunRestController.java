@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 // here we created a package called as rest controller and init we are initializing the controller
 // when ever a get request is called sayHello method will be executed
+/*
 @RestController
 public class FunRestController {
     // expose "/" that returns "Hello World"
@@ -33,3 +34,4 @@ public class FunRestController {
     }
 
 }
+*/
