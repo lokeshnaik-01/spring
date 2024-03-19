@@ -1,4 +1,4 @@
-package com.lokeshSpring.util;
+package com.lokeshSpring.lokeshSpringCourse.common;
 
 public interface Coach {
     String getDailyWorkOut();
