@@ -120,3 +120,32 @@
 # @Value annotation
   - `@Value` is sued to inject values into the spring boot app defined in `application.properties`
   - `import org.springframework.beans.factory.annotation.Value;` add this to the value where we want to import the value
+
+# Inversion Of Control (IOC)
+  - Approach of outsourcing the construction and management of objects
+
+# Spring Dependency Injection
+  - Dependency Inversion Principle
+  - Client delegates to another object the responsibility of providing its dependencies
+## Injection Types
+  - There are two recommended types of injection
+    - Constructor Injection
+    - Setter Injection
+### Constructor Injection
+  - Use this when you have required dependencies
+  - Generally recommended by spring.io dev team as first choice
+### Setter Injection
+  - User this when you have optional dependencies
+  - If dependency is not provided, your app can provide reasonable default logic
+
+## Spring AutoWiring
+  - For dependency injection, Spring can use autowriting
+  - Spring will look for a class that matches
+  - Spring will inject it automatically hence autowired
+
+# @Component
+  - `@Component` annotation marks the class as a Spring Bean and makes it a candidate for dependency injection
+  - A spring bean is regular java class that is managed by Spring
+# @Autowired
+  - `@Autowired` annotation tells spring to inject a dependency
+  - If you have one constructor then `@Autowired` on constructor is optional
