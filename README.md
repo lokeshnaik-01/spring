@@ -156,3 +156,10 @@
   - Spring boot will only scan for main class and the package in which the main class is present
   - Scanning only works for `com.lokeshSpring.lokeshSpringCourse` but doesn't work for `com.lokeshSpring.util` or anyother
   - To scan all these we need to explicitly list the base packages to scan check in springApplication main file
+
+# Setter Injection
+  - Inject dependencies by calling setter method on your class
+  - Steps
+    - Create Setter method in your class for injects
+    - Configure dependency injection with `@Autowired` Annotation
+  - Inject dependencies by calling any methods on your class just use `@Autowired` for the function
