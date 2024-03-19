@@ -163,3 +163,10 @@
     - Create Setter method in your class for injects
     - Configure dependency injection with `@Autowired` Annotation
   - Inject dependencies by calling any methods on your class just use `@Autowired` for the function
+
+# Field Injection
+  - It is not being used now
+  - can be seen in legacy projects
+  - it makes code harder to unit test
+  - Inject dependencies by setting Field values on your class directly (even private fields)
+  - Accomplished by `Java Reflection`
