@@ -4,9 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication (
-		/*scanBasePackages ={
+		// explicitly listing base packages to scan
+		scanBasePackages ={
 				"com.lokeshSpring.util",
-		}*/
+				"com.lokeshSpring.lokeshSpringCourse"
+		}
 )
 public class LokeshSpringCourseApplication {
 

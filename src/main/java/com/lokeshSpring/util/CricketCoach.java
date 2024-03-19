@@ -1,4 +1,4 @@
-package com.lokeshSpring.lokeshSpringCourse.common;
+package com.lokeshSpring.util;
 
 import org.springframework.stereotype.Component;
 
