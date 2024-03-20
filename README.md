@@ -195,3 +195,22 @@
   - for web related components like `@RestController` beans aren't created until requested
   - Many not discover config issues until too late
   - Need to make sure enough memory is present when beans are created
+
+# Bean Scopes
+  - Scope refer to lifecycle of bean like 
+    - how long does bean live
+    - how many instance are created
+    - how is bean shared
+  - Default Scope in bean in singleton
+## Singleton
+  - Spring Container creates ony one instance of bean by default
+  - it is cached in memory
+  - All dependency injections for the bean
+    - will reference the same bean
+  - `@Scope(ConfigurableBeanFactory.SCOPE_SINGLETION)` we can define bean as singleton explicitly
+## Additional Spring Bean Scopes
+  - ![Additional Spring Bean Scopes](src/main/resources/3.jpg)
+## Prototype
+  - new bean instance for each injection
+  - `@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)`
+  - 
