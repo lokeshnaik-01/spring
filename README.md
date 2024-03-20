@@ -224,3 +224,12 @@
   - `@PostConstruct` for setting up
   - `PreDestroy` for cleaning up
   - ![Bean Life Cycle](src/main/resources/4.jpg)
+  - For "prototype" scoped beans, Spring does not call the destroy method
+  - In contrast to the other scopes, Spring does not manage the complete lifecycle of a prototype bean: the container instantiates, configures, and otherwise assembles a prototype object, and hands it to the client, with no further record of that prototype instance.
+  - Thus, although initialization lifecycle callback methods are called on all objects regardless of scope, in the case of prototypes, configured destruction lifecycle callbacks are not called. The client code must clean up prototype-scoped objects and release expensive resources that the prototype bean(s) are holding.
+
+# `@Bean`
+  - Make an existing third-party class available to Spring framework
+  - You may not have access to source code of third-party class
+  - use third-party app as a spring bean
+  - We can use aws-sdk as a bean

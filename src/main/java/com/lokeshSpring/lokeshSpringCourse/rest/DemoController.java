@@ -50,7 +50,12 @@ public class DemoController {
     }
     */
 
-    public DemoController(@Qualifier("cricketCoach") Coach theCoach) {
+    // it will not run as bean swimCoach is not found
+    // as we haven't annotated it with component
+
+    // we create a new config and annotated the class as a bean
+    // we are using custom bean id instead of method name
+    public DemoController(@Qualifier("acquatic") Coach theCoach) {
         System.out.println("In class constructor: " + getClass().getSimpleName());
         myCoach = theCoach;
     }
