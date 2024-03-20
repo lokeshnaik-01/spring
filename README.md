@@ -179,7 +179,19 @@
   - in arguments, we pass the bean id as `Qualifier`
 
 # `@Primary`
-- If there are multiple beans we set one of the bean as primary in the constructor
-- It is added right after `@Component` this way we don't need to use `@Quaifier`.
-- We can't use more than one primary bean. So only one bean is used as primary
-- `@Qualifier` has highest priority. Even though we mention `@Primary`.
+  - If there are multiple beans we set one of the bean as primary in the constructor
+  - It is added right after `@Component` this way we don't need to use `@Quaifier`.
+  - We can't use more than one primary bean. So only one bean is used as primary
+  - `@Qualifier` has highest priority. Even though we mention `@Primary`.
+
+# Lazy Initialization
+  - Instead of creating all beans up front, we specify lazy initialization
+  - A bean will only be initialized when it is needed for dependency injection or explicitly requested
+  - `@Lazy` annotation is used
+  - `spring.main.lazy-initialization=true` all beans are set as lazy and only created when needed
+  - once `dailyworkout` endpoint is invoked spring will determine dependencies for demoController
+  - This feature is disabled by default
+## Disadvantages of Lazy
+  - for web related components like `@RestController` beans aren't created until requested
+  - Many not discover config issues until too late
+  - Need to make sure enough memory is present when beans are created
