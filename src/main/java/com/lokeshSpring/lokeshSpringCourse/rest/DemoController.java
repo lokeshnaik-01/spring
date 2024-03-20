@@ -29,11 +29,20 @@ public class DemoController {
     }
     */
 
+    /*
     @Autowired
     // we are specifying to use this implementation of coach interface
     public DemoController(@Qualifier("baseBallCoach") Coach theCoach) {
         myCoach = theCoach;
     }
+    */
+
+    @Autowired
+    // we set track as primary, so it'll be picked and no need to mention qualifier
+    public DemoController(Coach theCoach) {
+        myCoach = theCoach;
+    }
+
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
         return myCoach.getDailyWorkOut();

@@ -174,6 +174,12 @@
   - Inject dependencies by setting Field values on your class directly (even private fields)
   - Accomplished by `Java Reflection`
 
-# Qualifiers
+# `@Qualifier`
   - `@Qualifier` specify the bean id with name as class but first character lower-case
-  - in arguments we pass the bean id as `Qualifier`
+  - in arguments, we pass the bean id as `Qualifier`
+
+# `@Primary`
+- If there are multiple beans we set one of the bean as primary in the constructor
+- It is added right after `@Component` this way we don't need to use `@Quaifier`.
+- We can't use more than one primary bean. So only one bean is used as primary
+- `@Qualifier` has highest priority. Even though we mention `@Primary`.
