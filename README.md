@@ -213,4 +213,14 @@
 ## Prototype
   - new bean instance for each injection
   - `@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)`
-  - 
+
+# Bean LifeCycle Method
+  - We can add custom code during **bean initialization**
+    - Calling custom business logic methods
+    - Setting up handles to resources (db, sockets, file etc)
+  - We can add custom code during **bean destruction** 
+    - Calling custom business logic methods
+    - Clean up handles to resources
+  - `@PostConstruct` for setting up
+  - `PreDestroy` for cleaning up
+  - ![Bean Life Cycle](src/main/resources/4.jpg)
