@@ -121,6 +121,9 @@
   - `@Value` is sued to inject values into the spring boot app defined in `application.properties`
   - `import org.springframework.beans.factory.annotation.Value;` add this to the value where we want to import the value
 
+
+# Core Spring 
+
 # Inversion Of Control (IOC)
   - Approach of outsourcing the construction and management of objects
 
@@ -170,3 +173,7 @@
   - it makes code harder to unit test
   - Inject dependencies by setting Field values on your class directly (even private fields)
   - Accomplished by `Java Reflection`
+
+# Qualifiers
+  - `@Qualifier` specify the bean id with name as class but first character lower-case
+  - in arguments we pass the bean id as `Qualifier`

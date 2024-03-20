@@ -3,6 +3,7 @@ package com.lokeshSpring.lokeshSpringCourse.rest;
 
 import com.lokeshSpring.lokeshSpringCourse.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,11 +22,18 @@ public class DemoController {
     // setter method for dependency injection
     // we can also use method name as doSetCoach as spring doesn't care for method name and just check it is Autowired
 
+    /*
     @Autowired
     public void setCoach(Coach theCoach) {
         myCoach = theCoach;
     }
+    */
 
+    @Autowired
+    // we are specifying to use this implementation of coach interface
+    public DemoController(@Qualifier("baseBallCoach") Coach theCoach) {
+        myCoach = theCoach;
+    }
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
         return myCoach.getDailyWorkOut();
