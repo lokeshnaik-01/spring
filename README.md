@@ -1,5 +1,5 @@
 # Created for learning Spring, Notes about the stuff I learned
-##################################################################
+___
 # REST Controller
   - @RestController can be used to create a controller
   - we can use GetMapping or PostMapping to handle HTTP requests
